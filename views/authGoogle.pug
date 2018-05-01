@@ -1,0 +1,15 @@
+html
+    head
+        title Log In with Google
+    body
+        if(user)
+            h1 Hi, #{user.first_name}
+            h2 You`re loged in ;)
+            div
+                a(href="/") Home
+        else
+            div
+                h1 Please enter Your name ;)
+            div
+    button
+         a(href="http://localhost:3000/home") Go to add your name
